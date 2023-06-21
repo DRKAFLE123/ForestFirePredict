@@ -567,6 +567,38 @@ plt.ylabel('Scores')
 plt.show()
 
 # %%
+# Plot the MSE values
+linear_mse = 0.07627209224212729
+lasso_mse = 0.07978870712442448
+ridge_mse = 0.07837099199872964
+tree_mse =   0.0033470507544581607
+#plot the mae values
+linear_mae = 0.23726145381780567
+lasso_mae =  0.2448009095646445
+ridge_mae =  0.24206950042768569
+tree_mae =  0.0139917695473251
+
+models = ['Linear Regression', 'Lasso', 'Ridge', 'Decision Tree']
+mse_values = [linear_mse, lasso_mse, ridge_mse, tree_mse]
+mae_values = [linear_mae, lasso_mae, ridge_mae, tree_mae]
+
+# Set the width of the bars
+bar_width = 0.3
+# Set the positions of the bars on the x-axis
+r1 = np.arange(len(models))
+r2 = [x + bar_width for x in r1]
+# Plot the MSE values as a bar graph
+plt.bar(r1, mse_values, width=bar_width, label='MSE')  # r1 is the position
+# Plot the MAE values as a bar graph
+plt.bar(r2, mae_values, width=bar_width, label='MAE')  #r2 is also position after r1
+
+plt.xlabel('Models')
+plt.ylabel('Error')
+plt.title('Comparison of MSE and MAE for Different Models')
+plt.xticks([r + bar_width/2 for r in range(len(models))], models, rotation=45)
+plt.legend()
+plt.show()
 
 
 
+# %%

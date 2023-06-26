@@ -15,6 +15,9 @@
 # %%
 import pandas as pd
 import numpy as np
+import warnings
+import pickle
+warnings.filterwarnings("ignore")
 
 # %%
 data = pd.read_csv("./DATA/Algerian_forest_fires_dataset.csv")

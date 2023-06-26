@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../static/materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../static/materialize/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  
+
+
+  <nav class="green" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><b>DR</b></a>
+      <ul class="right hide-on-med-and-down">
+        
+      <li><a href="https://kathmandupost.com/">NEWS</a></li>
+      <li><a href="https://www.dofsc.gov.np/page/contact-us/en">INFORM_ALERT</a></li>
+      <li><a href="https://www.wwfnepal.org/our_work_/forests/">WWF</a></li>
+      </ul>
+
+      
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div> 
+  </nav>
+<br>
+</div>
+ <center><b > {{pred}}   </b></center>
+</div>
+
+</div>
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <h1 class="header center red-text"><b>Forest Fire Prediction</b></h1>
+      <div class="row center">
+        <h5 class="header col s12 green-text"><b>Predict the probability of Forest-Fire Occurence
+          <br></b>
+        </h5>
+      </div>
+
+  <div class="row">
+    <form action='/predict' method="post" class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+            <label for="first_name"><b>Temperature</b></label>
+            <br>
+          <input placeholder="Temperature in Celsius" name="Temperature" id="first_name" type="text" class="validate">
+        </div>
+
+        <div class="input-field col s4">
+          <label for="first_name"><b>FFMC</b></label>
+          <br>
+        <input placeholder="FFMC " name="FFMC" id="first_name" type="text" class="validate">
+      </div>
+      <div class="input-field col s4">
+        <label for="first_name"><b>Rain</b></label>
+        <br>
+      <input placeholder="Rain" name="Rain" id="first_name" type="text" class="validate">
+    </div>
+    
+
+        <!-- <div class="input-field col s4">
+
+          <label for="last_name"><b>Oxygen </b></label>
+            <br>
+          <input id="last_name" name="Oxygen" placeholder="Oxygen content in ppm"  type="text" class="validate">
+
+        </div> -->
+
+        <div class="input-field col s4">
+            <label for="_name"><b>Rate of Humidity</b></label>
+            <br>
+          <input id="_name" name="Humidity" placeholder="Humidity %" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+          <label for="_name"><b>DMC</b></label>
+          <br>
+        <input id="_name" name="DMC" placeholder="DMC" type="text" class="validate">
+      </div>
+
+      <div class="input-field col s4">
+        <label for="_name"><b>DC</b></label>
+        <br>
+      <input id="_name" name="DC" placeholder="DC" type="text" class="validate">
+    </div>
+
+    <div class="input-field col s4">
+      <label for="_name"><b> ISI </b></label>
+      <br>
+    <input id="_name" name="ISI" placeholder="ISI" type="text" class="validate">
+  </div>
+
+  <div class="input-field col s4">
+    <label for="_name"><b>BUI</b></label>
+    <br>
+  <input id="_name" name="BUI" placeholder="BUI" type="text" class="validate">
+</div>
+
+<div class="input-field col s4">
+  <label for="_name"><b>FWI </b></label>
+  <br>
+<input id="_name" name="FWI" placeholder="FWI" type="text" class="validate">
+</div>
+
+<div class="input-field col s4">
+  <label for="_name"><b>Region</b></label>
+  <br>
+<input id="_name" name="Region" placeholder="Region" type="text" class="validate">
+</div>
+
+
+
+
+      </div>
+
+      <div class="row center">
+
+          <button type="submit" class="btn-large waves-effect waves-light blue">Predict Probability</button>
+      </div>
+    </form>
+     
+
+
+    <br><br>
+  </div>
+  </div>>
+
+  <footer class="page-footer green">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">ABOUT:</h5>
+          <p class="grey-text text-lighten-4"><b> This is fire prediction webapp made by the student of vrit tech(DAMODAR KAFLE) under the supervision of Data Scientist:Arun Ghimire</b></p>
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
